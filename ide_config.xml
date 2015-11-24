@@ -1,0 +1,19 @@
+<application>
+	
+	<name>JSON View</name>
+	<version>1.2</version>
+	<description>Allows you to turn a JSON string into ColdFusion dump. Handy for converting adhoc JSON strings
+	into something readable. This extension makes use of a View. Go to your views menu and select JSONView to open it.</description>	
+	<license>This is free. If you like it, awesome.</license>
+	
+	<viewcontributions>
+		<view id="org.camden.jsonview" title="JSONView" handlerid="getjson">
+		</view>
+	</viewcontributions>
+
+	<handlers>
+		<handler id="getjson" type="CFM" filename="getjson.cfm" /> 
+		<handler id="postinstallhanlder" type="CFM" filename="post.cfm" /> 
+	</handlers>
+
+</application>
